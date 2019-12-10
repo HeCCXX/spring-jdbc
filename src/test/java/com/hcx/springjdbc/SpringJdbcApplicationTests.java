@@ -17,6 +17,14 @@ public class SpringJdbcApplicationTests {
     @Autowired
     DataSource dataSource;
 
+    /**
+    * @Author HCX 
+    * @Description //TODO 注意需要修改Test的包，否则调用nullpointException
+    * @Date 15:44 2019-12-10
+    * @param 
+    * @return void
+    * @exception       
+    **/
     @Test
     public void contextLoads() throws SQLException {
         System.out.println(dataSource.getClass());
